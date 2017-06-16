@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D8E5BC11EF412DD001A8898 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E5BC01EF412DD001A8898 /* Database.m */; };
+		9D8E5BC61EF41338001A8898 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8E5BC51EF41338001A8898 /* libsqlite3.tbd */; };
+		9D8E5BCA1EF41850001A8898 /* DatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E5BC91EF41850001A8898 /* DatabaseRow.m */; };
+		9D8E5BCC1EF42444001A8898 /* PlistReader.db in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E5BCB1EF42444001A8898 /* PlistReader.db */; };
 		9DBE28241EEEEFD00086BBDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE28231EEEEFD00086BBDF /* main.m */; };
 		9DBE28271EEEEFD00086BBDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE28261EEEEFD00086BBDF /* AppDelegate.m */; };
 		9DBE282A1EEEEFD00086BBDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE28291EEEEFD00086BBDF /* ViewController.m */; };
 		9DBE282D1EEEEFD00086BBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE282B1EEEEFD00086BBDF /* Main.storyboard */; };
 		9DBE282F1EEEEFD00086BBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE282E1EEEEFD00086BBDF /* Assets.xcassets */; };
 		9DBE28321EEEEFD00086BBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE28301EEEEFD00086BBDF /* LaunchScreen.storyboard */; };
+		9DBE283C1EEEF82A0086BBDF /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DBE283B1EEEF82A0086BBDF /* Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D8E5BBF1EF412DD001A8898 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = Database/Database.h; sourceTree = "<group>"; };
+		9D8E5BC01EF412DD001A8898 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = Database/Database.m; sourceTree = "<group>"; };
+		9D8E5BC51EF41338001A8898 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D8E5BC81EF41850001A8898 /* DatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseRow.h; sourceTree = "<group>"; };
+		9D8E5BC91EF41850001A8898 /* DatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseRow.m; sourceTree = "<group>"; };
+		9D8E5BCB1EF42444001A8898 /* PlistReader.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlistReader.db; sourceTree = "<group>"; };
 		9DBE281F1EEEEFD00086BBDF /* PlistReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlistReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBE28231EEEEFD00086BBDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DBE28251EEEEFD00086BBDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +37,7 @@
 		9DBE282E1EEEEFD00086BBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBE28311EEEEFD00086BBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DBE28331EEEEFD00086BBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBE283B1EEEF82A0086BBDF /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8E5BC61EF41338001A8898 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D8E5BBE1EF412CF001A8898 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9D8E5BBF1EF412DD001A8898 /* Database.h */,
+				9D8E5BC01EF412DD001A8898 /* Database.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		9D8E5BC41EF41338001A8898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D8E5BC51EF41338001A8898 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D8E5BC71EF41832001A8898 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D8E5BC81EF41850001A8898 /* DatabaseRow.h */,
+				9D8E5BC91EF41850001A8898 /* DatabaseRow.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9DBE28161EEEEFD00086BBDF = {
 			isa = PBXGroup;
 			children = (
 				9DBE28211EEEEFD00086BBDF /* PlistReader */,
 				9DBE28201EEEEFD00086BBDF /* Products */,
+				9D8E5BC41EF41338001A8898 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +98,8 @@
 		9DBE28211EEEEFD00086BBDF /* PlistReader */ = {
 			isa = PBXGroup;
 			children = (
+				9D8E5BC71EF41832001A8898 /* Model */,
+				9D8E5BBE1EF412CF001A8898 /* Database */,
 				9DBE28251EEEEFD00086BBDF /* AppDelegate.h */,
 				9DBE28261EEEEFD00086BBDF /* AppDelegate.m */,
 				9DBE28281EEEEFD00086BBDF /* ViewController.h */,
@@ -65,7 +107,6 @@
 				9DBE282B1EEEEFD00086BBDF /* Main.storyboard */,
 				9DBE282E1EEEEFD00086BBDF /* Assets.xcassets */,
 				9DBE28301EEEEFD00086BBDF /* LaunchScreen.storyboard */,
-				9DBE28331EEEEFD00086BBDF /* Info.plist */,
 				9DBE28221EEEEFD00086BBDF /* Supporting Files */,
 			);
 			path = PlistReader;
@@ -74,6 +115,9 @@
 		9DBE28221EEEEFD00086BBDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9D8E5BCB1EF42444001A8898 /* PlistReader.db */,
+				9DBE283B1EEEF82A0086BBDF /* Config.plist */,
+				9DBE28331EEEEFD00086BBDF /* Info.plist */,
 				9DBE28231EEEEFD00086BBDF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -110,6 +154,7 @@
 				TargetAttributes = {
 					9DBE281E1EEEEFD00086BBDF = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 56H63D8DA5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBE283C1EEEF82A0086BBDF /* Config.plist in Resources */,
 				9DBE28321EEEEFD00086BBDF /* LaunchScreen.storyboard in Resources */,
 				9DBE282F1EEEEFD00086BBDF /* Assets.xcassets in Resources */,
 				9DBE282D1EEEEFD00086BBDF /* Main.storyboard in Resources */,
+				9D8E5BCC1EF42444001A8898 /* PlistReader.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBE282A1EEEEFD00086BBDF /* ViewController.m in Sources */,
+				9D8E5BCA1EF41850001A8898 /* DatabaseRow.m in Sources */,
 				9DBE28271EEEEFD00086BBDF /* AppDelegate.m in Sources */,
+				9D8E5BC11EF412DD001A8898 /* Database.m in Sources */,
 				9DBE28241EEEEFD00086BBDF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H63D8DA5;
 				INFOPLIST_FILE = PlistReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.PlistReader;
@@ -283,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H63D8DA5;
 				INFOPLIST_FILE = PlistReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.PlistReader;
@@ -309,6 +360,7 @@
 				9DBE28381EEEEFD00086BBDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

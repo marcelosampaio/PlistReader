@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Database.h"
+#import "DatabaseRow.h"
 
 @interface ViewController : UIViewController
+
+
+@property (nonatomic,strong) Database *database;
+
+@property (nonatomic,strong) NSMutableArray<DatabaseRow *> *plistInfo;
 
 
 @end
